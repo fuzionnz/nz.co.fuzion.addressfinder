@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<extension key="nz.co.fuzion.addressfinder" type="module">
+  <file>addressfinder</file>
+  <name>Address Finder</name>
+  <description>Integrates Address Finder autocompletion into CiviCRM address fields.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Torrance</author>
+    <email>torrance123@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2017-07-12</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.7</ver>
+  </compatibility>
+  <comments>This is a work in progress.</comments>
+  <civix>
+    <namespace>CRM/Addressfinder</namespace>
+    <format>22.10.0</format>
+  </civix>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+  </classloader>
+</extension>
