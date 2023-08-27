@@ -1,5 +1,5 @@
 Package: nz.co.fuzion.addressfinder
-Copyright (C) 2017, Torrance <torrance123@gmail.com>
+Copyright (C) 2023, Jitendra Purohit <purohitjitend@gmail.com>
 Licensed under the GNU Affero Public License 3.0 (below).
 
 -------------------------------------------------------------------------------
