@@ -1,8 +1,8 @@
-# nz.co.fuzion.addressfinder
+# Address Finder for CiviCRM Address fields.
 
-![Screenshot](/images/screenshot.png)
+![Screenshot](/images/addressfinder.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+Uses https://addressfinder.nz/ API to list address for CiviCRM Address fields.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -47,8 +47,6 @@ cv en addressfinder
 
 ## Getting Started
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
+- Enable the extension.
+- Store the AddressFinder key in civicrm settings - `cv api Setting.create address_finder_key="XXX"`
+- Load the contribution/event page having address fields. The Street Address field must have a placeholder `Start typing an address...`.
