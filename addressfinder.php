@@ -109,12 +109,3 @@ function addressfinder_civicrm_navigationMenu(&$menu) {
 function addressfinder_civicrm_postInstall() {
   _addressfinder_civix_civicrm_postInstall();
 }
-
-/**
- * Implements hook_civicrm_entityTypes().
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
- */
-function addressfinder_civicrm_entityTypes(&$entityTypes) {
-  _addressfinder_civix_civicrm_entityTypes($entityTypes);
-}
