@@ -54,7 +54,7 @@ CRM.$(function($) {
           var widget = new AddressFinder.Widget(
             $('#address_' + id + '_street_address', el)[0],
             key,
-            'US',
+            'NZ',
             {
               byline: false,
               max_results: 8,
@@ -130,7 +130,7 @@ CRM.$(function($) {
         var widget = new AddressFinder.Widget(
           $('#' + billing + 'street_address-' + loctype, profile)[0],
           key,
-          'US',
+          'NZ',
           {
             byline: false,
             max_results: 8,
