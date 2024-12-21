@@ -74,9 +74,6 @@ CRM.$(function($) {
             {
               byline: false,
               max_results: 8,
-              "address_params": {
-                "delivered": "1"
-              }
             }
           );
 
@@ -156,9 +153,6 @@ CRM.$(function($) {
           {
             byline: false,
             max_results: 8,
-            "address_params": {
-              "delivered": "1"
-            }
           }
         );
         widget.on('result:select', function(fullAddress, metaData) {
