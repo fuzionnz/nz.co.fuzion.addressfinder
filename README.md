@@ -1,3 +1,5 @@
+Archived - shifted to https://lab.civicrm.org/extensions/addressfinder
+
 # Address Finder for CiviCRM Address fields.
 
 ![Screenshot](/images/addressfinder.png)
