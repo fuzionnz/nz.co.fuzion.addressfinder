@@ -9,8 +9,8 @@
     <email>admin@fuzion.co.nz</author>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">https://github.com/fuzionnz/nz.co.fuzion.addressfinder</url>
-    <url desc="Documentation">https://github.com/fuzionnz/nz.co.fuzion.addressfinder</url>
+    <url desc="Main Extension Page">https://lab.civicrm.org/extensions/addressfinder</url>
+    <url desc="Documentation">https://lab.civicrm.org/extensions/addressfinder#</url>
     <url desc="Support">https://fuzion.co.nz</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
