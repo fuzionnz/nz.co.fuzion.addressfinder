@@ -4,25 +4,22 @@ CRM.$(function($) {
     return;
   }
 
-  CRM.api4('Setting', 'get', {
-    select: ["defaultContactCountry"]
-  }, 0).then(function(countrySetting) {
-    const COUNTRY_ID = countrySetting.value;
-    let COUNTRY;
-    switch (COUNTRY_ID) {
-      case '1154':
-        COUNTRY = 'NZ';
-        break;
-      case '1013':
-        COUNTRY = 'AU';
-        break;
-      case '1228':
-        COUNTRY = 'US';
-        break;
-      default:
-        console.error('Unsupported country ID:', COUNTRY_ID);
-        return;
-    }
+  const COUNTRY_ID = CRM.vars.addressfinder.default_country_id;
+  let COUNTRY;
+  switch (COUNTRY_ID) {
+    case '1154':
+      COUNTRY = 'NZ';
+      break;
+    case '1013':
+      COUNTRY = 'AU';
+      break;
+    case '1228':
+      COUNTRY = 'US';
+      break;
+    default:
+      console.error('Unsupported country ID:', COUNTRY_ID);
+      return;
+  }
 
     createWidgets();
     $('[id^="address-block"], [id^="addMoreAddress"], [id^="addressBlockId"]').click(function() {
@@ -218,7 +215,4 @@ CRM.$(function($) {
       }
     }
 
-  }, function(failure) {
-    console.error('Failed to get default contact country setting', failure);
-  });
 });

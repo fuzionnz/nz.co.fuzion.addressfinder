@@ -13,7 +13,13 @@ function addressfinder_civicrm_config(&$config) {
 
 function addressfinder_civicrm_coreResourceList(&$list, $region) {
   $key = Civi::settings()->get('address_finder_key');
-  CRM_Core_Resources::singleton()->addVars('addressfinder', [
+
+  $setting = \Civi\Api4\Setting::get(FALSE)
+    ->addSelect('defaultContactCountry')
+    ->execute()
+    ->first();
+  Civi::resources()->addVars('addressfinder', [
+    'default_country_id' => $setting['value']?? NULL,
     'key' => $key,
   ]);
   $list[] = Civi::resources()->getUrl('nz.co.fuzion.addressfinder', 'js/addressfinder.api.js');
